@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>parent</groupId>
+  <artifactId>dws.custom</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>dws.custom</name>
+  <url>http://maven.apache.org</url>
+  <!-- <url>https://github.com/spring-io/initializr</url> -->
+	<repositories>
+
+
+		<repository>
+
+			<id>io.spring</id>
+
+			<url>https://mvnrepository.com/artifact/io.spring.initializr</url>
+
+		</repository>
+
+
+		<repository>
+
+			<id>io.spring1</id>
+
+			<url>http://repo.spring.io/release</url>
+
+		</repository>
+
+	</repositories>
+<parent>
+		<groupId>io.spring.initializr</groupId>
+		<artifactId>initializr</artifactId>
+		<version>0.6.0.RELEASE</version>
+	</parent>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
